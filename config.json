@@ -1,0 +1,20 @@
+{
+  "version": "0.0.1",
+  "name": "36氪",
+  "description": "36氪",
+  "keywords": [
+    "创业"
+  ],
+  "interval": 10,
+  "author": {
+    "name": "vimrus",
+    "email": "vimrus.com@gmail.com",
+    "url": "https://github.com/vimrus"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vimrus/36kr"
+  },
+  "bugs": "https://github.com/vimrus/36kr/issues",
+  "main": "index.js"
+}
