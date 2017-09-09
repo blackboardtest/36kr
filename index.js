@@ -10,8 +10,9 @@ hubble.getXML('http://36kr.com/feed', function (error, response, $) {
 				return;
 			}
 
-			var title = dom.find('title').text().trim();
+			var title   = dom.find('title').text().trim();
 			var content = dom.find('description').text();
+			var image   = dom.find('img').eq(0).attr('src');
 			var summary = content.replace(/<\/?[^>]*>/g,'').trim().substring(0, 50);
 
 			var article = {
@@ -19,7 +20,8 @@ hubble.getXML('http://36kr.com/feed', function (error, response, $) {
 				title: title,
 				content: content,
 				summary: summary,
-				url: url
+				url: url,
+				image: image
 			};
 			articles.append(article);
 		});
