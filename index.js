@@ -16,7 +16,7 @@ hubble.getXML('http://36kr.com/feed', function (error, response, $) {
 			var $ = cheerio.load(content);
 
 			var image   = $('img').eq(0).attr('src');
-			var summary = content.replace(/<\/?[^>]*>/g,'').trim().substring(0, 50);
+			var summary = content.replace(/<\/?[^>]*>/g, '').trim().substring(0, 50);
 
 			var article = {
 				key: key,
